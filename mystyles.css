@@ -1,0 +1,221 @@
+body {
+    background-color: rgb(255,255,255);
+    background-image: url("darkbuilding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    font-family: monospace;
+    }
+.logo {
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    }
+
+.topnav {
+    width: 100%;
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    }
+.topnav a {
+    font-family: monospace;
+    float: left;
+    padding: 12px;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-size: 17px;
+    width: 14.73%;
+    text-align: center;
+    }      
+.topnav a:hover {
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+    }
+.topnav a:active {
+    background-color: rgb(128,128,128);
+    color: rgb(0,0,0);
+    }
+.topnav a::after{
+    content:"";
+    width:0%;
+    height:2px;
+    background: rgba(0,0,0, 0.6);
+    margin:auto;
+    display:block;
+    transition: 0.5s;
+    }
+.topnav a:hover::after{
+    width:100%
+    }
+
+.active {
+    background-color: rgb(128,128,128);
+    color: rgb(0,0,0);
+    }
+
+.homenav {
+    width: 100%;
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
+    }
+    
+.homenav a {
+    font-family: monospace;
+    float: left;
+    padding: 12px;
+    color: rgb(255,255,255);
+    text-decoration: none;
+    font-size: 17px;
+    width: 14.73%;
+    text-align: center;
+    }      
+    
+.homenav a:hover {
+    background-color: rgb(255,255,255);
+    color: rgb(0,0,0);
+    }
+    
+.homenav a:active {
+    background-color: rgb(128,128,128);
+    color: rgb(0,0,0);
+    }
+
+.homenav a::after{
+    content:"";
+    width:0%;
+    height:2px;
+    background: rgba(0,0,0, 0.6);
+    margin:auto;
+    display:block;
+    transition: 0.5s;
+    }
+.homenav a:hover::after{
+    width:100%
+    }
+
+.block {
+    width: auto;
+    height: auto;
+}
+
+.typewriter h1 {
+    color: rgb(255,255,255);
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: -50px;
+    margin: 80px auto;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: .15em;
+    white-space: normal;
+    letter-spacing: .15em;
+    animation: typewriter 5s steps(18) 1s, cursor 500ms steps(18) infinite;
+}
+
+  @keyframes typewriter {
+    from {
+        width: 0%;}
+    to {
+        width: 18ch;}
+}
+
+  @keyframes cursor {
+    from {
+        border-color: rgba(255,255,255,0.5);}
+    to {
+        border-color: transparent;}
+}
+
+.block1 {
+    width: 100%;
+    height: 580px;
+}
+.block2 {
+    background: rgba(128,128,128,0.8);
+    min-width: auto;
+    min-height: 700px;
+    border-radius: 10px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.blocklog {
+    background:rgba(105,105,105,0.8);
+    min-width: auto;
+    min-height: 300px;
+    display: block;
+    font-family: monospace;
+    margin: 50px auto 0% 13%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    width: 75%;
+    height: auto;
+    text-align: center;
+}
+.blocklog:hover{
+    background-color: rgba(128,128,128,0.8);
+    transition: 1s;
+}
+.blocklog a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(0,0,0,1);
+    border-radius: 10px;
+    background: rgba(125,125,125,0.8);
+    transition:1s;
+}
+.blocklog a:hover{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(0,0,0, 1);
+    border-radius: 10px;
+    background: rgba(128,128,128,0.8);
+    transition:2s;
+}
+
+.textbox {
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(3, 3, 3);
+    border: 1px solid rgb(2, 2, 2);
+    padding:12px 34px;
+    font-size:20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.textbox:hover{
+    border: 1px solid rgba(0,0,0, 0.6);
+    background: rgba(128,128,128,0.8);
+    transition:1s;
+}
+
+input[type=submit]{
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+input[type=submit]:hover{
+    color: rgb(128,128,128);
+    background-color: rgb(0,0,0);
+    font-size: 20px;
+    transition: 1s;
+}
+input[type=reset]{
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+}
+input[type=reset]:hover{
+    color: rgb(128,128,128);
+    background-color: rgb(0,0,0);
+    font-size: 20px;
+    transition: 1s;
+}
+th{
+    font-size: 40px;
+}

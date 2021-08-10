@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course registration</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="formstyles.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="home.html">Home</a>
+        <a href="aboutme.html">About me</a>
+        <a href="logsign.html" class="active">Register</a>
+        <a href="course.html">Courses</a>
+        <a href="cv.html">CV</a>
+        <a href="contacts.html">Contacts</a>
+    </div><br>
+    <form action="coursereg.php" method="post" class="form" style="justify-content: center;">
+        <h1>Course registration</h1>
+    Course name:  <input type="text" name="coursename" class="fieldbg"
+    placeholder="--Enter course name--" required><br><br><br>
+    Course code:  <input type="text" name="coursecode" class="fieldbg"
+    placeholder="AB123" required><br><br><br>
+    Course description:  <input type="text" name="description" class="fieldbg" 
+    placeholder="Brief course description" required><br><br><br>
+    <label for="department">Department offering the course:  </label>
+    <select name="department" class="fieldbg" required>
+        <option value="none" selected disabled> Choose a department:  </option>
+        <option value="CSE">CSE</option>
+        <option value="ETE">ETE</option>
+    </select><br><br><br>
+    <label for="year">Academic year the course was offered:  </label>
+    <select name="year" class="fieldbg" required>
+        <option value="none" selected disabled> Select an academic year:</option>
+        <option value="Year1">Year 1</option>
+        <option value="Year2">Year 2</option>
+        <option value="Year3">Year 3</option>
+        <option value="Year4">Year 4</option>
+    </select><br><br><br>
+    <label for="semester">Semester course was offered:  </label>
+    <select name="semester" class="fieldbg" required>
+        <option value="none" selected disabled> Select a semester:  </option>
+        <option value="sem1">Semester 1</option>
+        <option value="sem2">Semester 2</option>
+    </select><br><br><br>
+    Course instructor:  <input type="text" name="teacher" class="fieldbg"
+    placeholder="Dr.XXXX" required><br><br><br>
+    <label for="grade">Grade / Results:  </label>
+    <select name="grade" class="fieldbg" required>
+        <option value="none" selected disabled> Grade / Results</option>
+        <option value="A">A</option>
+        <option value="B+">B+</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+    </select><br><br>
+    <label for="submit">
+        <input type="submit">
+    </label> 
+    <label for="reset">
+        <input type="reset">
+    </label>
+    <p>Registered courses already?<a style="text-decoration: none;" 
+        href="http://localhost/personal/display.php">Click here to view.</a></p><br>
+        <a style="text-decoration: none;" href="course.html">Log out</a>
+    </form>
+</body>
+</html>

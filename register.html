@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="mystyles.css">
+    <link rel="stylesheet" href="formstyles.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="home.html">Home</a>
+        <a href="aboutme.html">About me</a>
+        <a href="logsign.html" class="active">Register</a>
+        <a href="course.html">Courses</a>
+        <a href="cv.html">CV</a>
+        <a href="contacts.html">Contacts</a>
+    </div>
+<br><br><br>
+<script>
+    function formvalidate(){
+        var fname=document.forms.registration.firstname.value;
+        var mname=document.forms.registration.middlename.value;
+        var sname=document.forms.registration.surname.value;
+        var uname=document.forms.registration.username.value;
+        var email=document.forms.registration.email.value;
+        var pass1=document.forms.registration.password1.value;
+        var pass2=document.forms.registration.password2.value;
+
+        if(pass1.length<10){
+            alert("Password must have atleast 10 characters");
+            return false;
+        }
+        if(pass1!=pass2){
+            alert("Password must be the same!"); 
+            return false;  
+        }
+        var num=/[0-9]/;
+        var letters=/[a-zA-Z]/;
+
+        if(num.test(pass1)==false || letters.test(pass1)==false)
+        {
+            alert("Password must contain alphanumeric characters");
+            return false;
+        }
+        /*var letters=/[a-zA-Z]/;
+        if(letters.test(pass1)==false)
+        {
+            alert("Password must include a letter");
+            return false;
+        }*/
+        var special=/[!@#$%^&*]/;
+        if(special.test(pass1)==false)
+        {
+            alert("Password must have include a special character");
+            return false;
+        }
+        
+    }
+</script>
+<div class="form">
+    <form action="register.php" method="post"  name="registration" enctype="multipart/form-data" onsubmit="return formvalidate()">
+        <h1>Registration Form</h1><br>
+        First name:<input type="text" name="firstname" class="fieldbg" >
+        Middle name:<input type="text" name="middlename" class="fieldbg"><br><br><br>
+        Surname:<input type="text" name="surname" class="fieldbg"><br><br><br>
+        Username:<input type="text" name="username" class="fieldbg">
+        E-mail<input type="email" name="email" class="fieldbg"><br><br><br>
+        Enter your a password:<input type="password" name="password1" class="fieldbg" required>
+        Confirm your password:<input type="password" name="password2" class="fieldbg"><br><br><br>
+        Upload your CV file:
+        <input type="file" id="cv" name="cv" class="fieldbg"><br><br>
+        Social media usernames: (optional) <br><br>
+        Facebook: <input type="text" name="facebook" class="fieldbg">
+        Instagram: <input type="text" name="instagram" class="fieldbg">
+        Twitter: <input type="text" name="twitter" class="fieldbg"><br><br><br>
+        <label for="Submit button">Submit button:</label>
+        <input type="submit">
+        <label for="Reset button">Reset button:</label>
+        <input type="reset">
+    </form>
+</div>
+</body>
+</html>

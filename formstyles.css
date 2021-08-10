@@ -1,0 +1,78 @@
+.blocklog {
+    background:rgba(105,105,105,0.8);
+    min-width: 80%;
+    min-height: 300px;
+    display: block;
+    font-family: monospace;
+    margin: 50px auto 0% 13%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    width: 75%;
+    height: auto;
+    text-align: center;
+}
+.blocklog:hover{
+    background-color: rgba(128,128,128,0.8);
+    transition: 1s;
+}
+.blocklog a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(0,0,0, 1);
+    border: 2px solid rgba(0,0,0, 0.6);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.8);
+    transition:1s;
+}
+.blocklog a:hover{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgba(0,0,0, 1);
+    border: 1px solid rgba(0,0,0, 0.6);
+    border-radius: 10px;
+    background: rgba(255,255,255,0.8);
+    transition:2s;
+}
+
+.textbox {
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(3, 3, 3);
+    border: 1px solid rgb(2, 2, 2);
+    padding:12px 34px;
+    font-size:20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.textbox:hover{
+    border: 1px solid rgba(0,0,0, 0.6);
+    background: rgba(128,128,128,0.8);
+    transition:1s;
+}
+
+.form {
+    background-color: rgba(128,128,128,0.5);
+    display: block;
+    font-family: monospace;
+    margin: 50px auto 0% 13%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    width: 75%;
+    height: auto;
+    text-align: center;
+}
+.form:hover{
+    background-color: rgba(128,128,128,0.8);
+    transition: 1s;
+}
+
+.fieldbg {
+    border-radius: 10px;
+}
+.fieldbgbrief {
+    border-radius: 10px;
+    min-width: 600px;
+}
